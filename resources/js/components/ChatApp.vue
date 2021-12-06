@@ -1,5 +1,5 @@
 <template>
-  <div class="chat">
+  <div class="_chat">
     <ContactList :contacts="contacts" @selected="startConversationWith" />
     <Conversation :contact="selectedContact" :messages="messages" @new="saveNewMessage" />
   </div>
@@ -127,8 +127,3 @@ export default {
   components: { Conversation, ContactList },
 };
 </script>
-<style lang="scss" scoped>
-.chat {
-  display: flex;
-}
-</style>

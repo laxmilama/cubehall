@@ -5974,3 +5974,7 @@ fieldset {
 .c_selected {
   background: var(--gray-light);
 }
+
+._chat {
+  display: flex;
+}
