@@ -64,7 +64,8 @@ export default {
 </script>
 <style lang="scss" scoped>
 .contacts-list {
-  flex: 2;
+  max-width: 375px;
+  width: 100%;
 
   ul {
     list-style-type: none;

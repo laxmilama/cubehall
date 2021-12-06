@@ -1,7 +1,7 @@
-@extends('layouts.shop')
+@extends('layouts.chat')
 
 @section('title')
-    Explore
+    Messages
 @endsection
 
 @section('content')

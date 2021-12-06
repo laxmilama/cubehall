@@ -1,6 +1,6 @@
 <template>
   <div class="feed" ref="feed" id="message_feed">
-    <ul v-if="contact">
+    <ul v-if="contact" style="max-width: 600px; width: 100%">
       <li
         v-for="message in messages"
         :class="`message ${
@@ -61,9 +61,10 @@ export default {
 </script>
 <style lang="scss" scoped>
 .feed {
-  background: #fefefe;
+  background: var(--gray-very-light);
   height: 100%;
-  max-height: 470px;
+  display: flex;
+  justify-content: center;
   overflow: auto;
 
   ul {

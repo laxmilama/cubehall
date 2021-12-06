@@ -1,7 +1,16 @@
 <template>
   <div class="_chat">
-    <ContactList :contacts="contacts" @selected="startConversationWith" />
-    <Conversation :contact="selectedContact" :messages="messages" @new="saveNewMessage" />
+    <ContactList
+      :class="{ fullcontact: contactIsActive }"
+      :contacts="contacts"
+      @selected="startConversationWith"
+    />
+    <Conversation
+      :class="{ fullmsgfeed: !contactIsActive }"
+      :contact="selectedContact"
+      :messages="messages"
+      @new="saveNewMessage"
+    />
   </div>
 </template>
 <script>
@@ -51,11 +60,15 @@ export default {
         if (this.canLoadMore) {
           this.loadMore();
           var topPos = fc.offsetTop;
-          // console.log(topPos);
           msgElm.scrollTop = topPos;
           return;
         }
       }
+    });
+
+    EventBus.$on("deselectcontact", (data) => {
+      console.log("what");
+      this.deselectContact();
     });
   },
 
@@ -77,6 +90,10 @@ export default {
 
         this.selectedContact = contact;
       });
+    },
+    deselectContact() {
+      this.selectedContact = null;
+      this.contact = null;
     },
     loadMore() {
       if (this.data) {
@@ -125,5 +142,14 @@ export default {
     },
   },
   components: { Conversation, ContactList },
+  computed: {
+    contactIsActive: function () {
+      if (this.contact) {
+        return false;
+      } else {
+        return true;
+      }
+    },
+  },
 };
 </script>
