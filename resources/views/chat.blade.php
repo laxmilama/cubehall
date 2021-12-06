@@ -5,7 +5,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container clearPadMobile">
         <div data-init="chat">
             <chat-app :user="{{ auth()->user() }}"></chat-app>
         </div>

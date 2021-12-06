@@ -5973,6 +5973,8 @@ fieldset {
 }
 .msg_composer_inp {
   width: 100%;
+  background-color: var(--gray-light);
+  font-size: 18px;
 }
 .msg_composer_box {
   max-width: 600px;
@@ -6021,6 +6023,10 @@ fieldset {
   display: none;
 }
 
+.contact_msg_short {
+  color: var(--gray-medium-dark);
+}
+
 @media only screen and (max-width: 600px) {
   .fullcontact {
     width: 100%;
@@ -6046,6 +6052,7 @@ fieldset {
     background: var(--gray-very-light);
     border: none;
     border-radius: 50%;
+    margin-right: 15px;
   }
   .msg_back_btn svg {
     stroke: var(--gray-very-dark);

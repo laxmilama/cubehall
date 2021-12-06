@@ -1,6 +1,6 @@
 <template>
   <div class="contacts-list">
-    <div>
+    <div class="_MBL-addPad">
       <h2>Message</h2>
     </div>
     <ul>
@@ -9,7 +9,7 @@
         :key="contact.id"
         @click="selectContact(contact)"
         :class="{ c_selected: contact == selected }"
-        class="msg_user"
+        class="msg_user round_c_s"
       >
         <div class="msg_user_profile round_full">
           <img :src="$siteURL + '/images/profile/thumb/' + contact.profile_image" />
@@ -18,8 +18,8 @@
           <div>
             <strong>{{ contact.name }}</strong>
           </div>
-          <span>
-            {{ contact.recent.text }}
+          <span class="contact_msg_short">
+            {{ truncateMsg(contact.recent.text) }}
           </span>
         </div>
         <span class="unread" v-if="contact.unread">{{ contact.unread }}</span>
@@ -46,6 +46,13 @@ export default {
 
       this.$emit("selected", contact);
       // console.log(this.$emit('selected',contact));
+    },
+    truncateMsg(string) {
+      var n = string;
+      if (string.length > 40) {
+        n = string.substring(0, 40) + "...";
+      }
+      return n;
     },
   },
   computed: {
