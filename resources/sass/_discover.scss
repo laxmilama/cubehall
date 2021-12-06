@@ -1,0 +1,62 @@
+.DC{
+    &_container{
+        position: absolute;
+        width: 100%;
+    }
+    &_wrap{
+        width: 100%;
+        height:100%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        overflow-y: scroll;
+    }
+    &_back_Btn{
+        position: fixed!important;
+        top: 0;
+        left: 0;
+    }
+    &_studio{
+        &_card{
+            width: 100%;
+            margin-bottom: 20px;
+            margin-top: 20px;
+            &:first-child{
+                margin-top: 0;
+            }
+        }
+        &_head{
+            width:100%;
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            padding: 0 15px;
+            box-sizing: border-box;
+        }
+        &_body{
+            width:100%;
+            display: flex;
+            flex-wrap: nowrap;
+            overflow: auto;
+        }
+        &-profile {
+            height: 50px;
+            width: 50px;
+            margin-right: 8px;
+            &-img{
+                width: 100%;
+                height:100%;
+                object-fit: cover;
+            }
+        }
+        &-box{
+            display: flex;
+            flex-wrap: nowrap;
+            flex-shrink: 0;
+            width: calc(100% / 3.5);
+            &:first-child{
+                margin-left: 15px;
+            }
+        }
+    }
+}

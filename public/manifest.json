@@ -1,0 +1,75 @@
+{
+    "short_name": "CubeHall",
+    "name": "CubeHall v0.1b",
+    "icons": [{
+      "src": "/assets/00ch26edc-bd49-64cdf-ico-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      }, {
+        "src": "/assets/00ch26edc-bd49-64cdf-ico-144.png",
+        "sizes": "144x144",
+        "type": "image/png"
+      }, {
+        "src": "/assets/00ch26edc-bd49-64cdf-ico-152.png",
+        "sizes": "152x152",
+        "type": "image/png"
+      }, {
+        "src": "/assets/00ch26edc-bd49-64cdf-ico-192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      }, {
+        "src": "/assets/00ch26edc-bd49-64cdf-ico-256.png",
+        "sizes": "256x256",
+        "type": "image/png"
+      }, {
+        "src": "/assets/00ch26edc-bd49-64cdf-ico-512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }],
+    "start_url": "/",
+    "background_color": "#d82448",
+    "display_override": ["window-control-overlay", "standalone"],
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#d82448",
+    "description": "Show off things you love",
+    "shortcuts": [
+      {
+        "name": "Following feed",
+        "short_name": "Following",
+        "description": "Get to know what your followings are upto",
+        "url": "/following?source=pwa",
+        "icons": [{ "src": "/assets/folowing.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Online activities",
+        "short_name": "Parlor",
+        "description": "Find online activities to do with your friends",
+        "url": "/explore/parlors?source=pwa",
+        "icons": [{ "src": "/assets/parlor.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "Bag",
+        "short_name": "Bag",
+        "description": "Find online activities to do with your friends",
+        "url": "/explore/parlors?source=pwa",
+        "icons": [{ "src": "/assets/bag.png", "sizes": "192x192" }]
+      },
+      {
+        "name": "View Orders",
+        "short_name": "Orders",
+        "description": "Buy products nearby",
+        "url": "/orders?source=pwa",
+        "icons": [{ "src": "/assets/order.png", "sizes": "192x192" }]
+      },     
+      
+      {
+        "name": "View Tickets",
+        "short_name": "Tickets",
+        "description": "Buy products nearby",
+        "url": "/ticket?source=pwa",
+        "icons": [{ "src": "/assets/tickets.png", "sizes": "192x192" }]
+      }
+    ]
+    
+  }

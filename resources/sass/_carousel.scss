@@ -1,0 +1,98 @@
+.banner{
+    position: relative;
+    width: 100%;
+
+    &-wrapper{
+        width: 100vw;
+        // height: 500px;
+        padding-top:36%;
+        position: relative;
+        overflow: hidden;
+    }
+    &-centered{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    &-pic{
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        object-fit: cover;
+    }
+    &-open-studio{
+        width: 100%;
+        padding-top: 36%;
+        position: relative; 
+    }
+    &-inner-content{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        background-color: wheat;
+    }
+    &-background{
+        height: 100%;
+        width: 100%;
+        z-index: -1;
+        position: absolute;
+        &-img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.hpr{
+    display: flex;
+    &-left{
+        width: 40%;
+        height: 100%;
+        color:var(--primary-dark);
+
+    }
+    &-right{
+        width: 40%;
+        height: 100%;
+
+    }
+    &-img{
+        position: absolute;
+        width: 20%;
+    }
+    &-im1{
+        transform: translate(-20%, 25%);
+        right: 0;
+    }
+    &-im2{
+        transform: translate(10%, 5%);
+    }
+    &-im3{
+        transform: translate(100%, -10%);
+        bottom: 0;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .banner{
+            &-wrapper{
+                padding-top:100%;
+                background-color: brown;
+            }
+    }
+
+}
+@media only screen and (max-width: 920px) and (min-width: 600px) {
+    .banner{
+        &-wrapper{
+            padding-top:50%;
+            background-color: brown;
+        }
+}
+
+}

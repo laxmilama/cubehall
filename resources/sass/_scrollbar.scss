@@ -1,0 +1,92 @@
+.scrollbar{
+    &-x{
+        width: 100%;
+        background: var(--gray-very-light);
+        height: 0.3rem;
+        position: relative;
+        margin: 10px 0 ;
+        border-radius: 2rem;
+        height: 0.2rem;
+
+    }
+    &-handle {
+        position: absolute;
+        width: 30%;
+        height: 0.2rem;
+        background: var(--gray-medium-dark);
+        cursor: pointer;
+        cursor: -webkit-grab;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 2rem;
+        top: 1px !important;
+        transition: height ease-in-out 0.12s;
+        &:hover{
+            height: 0.5rem;
+        }
+    }
+    &-isActive{
+        height: 0.5rem;
+        background-color: var(--gray-very-dark);
+    }
+}
+.scrollable{
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -ms-overflow-style: none; /* IE 11 */
+    scrollbar-width: none; /* Firefox 64 */
+    &::-webkit-scrollbar{
+        display: none;
+    }
+    &:hover .tgl-left-btn{
+        opacity: 1;
+    }
+}
+.tgl-left-btn{
+
+    display: none;
+    
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left:-20px;
+    &::after{
+        color: white;
+        content: '&lt;';
+    }
+
+}
+.tgl-right-btn{
+    display: none;
+    
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    right:-20px;
+    &::after{
+        color: white;
+        content: '&lt;';
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    .scrollbar{
+        &-handle {
+            position: absolute;     
+            display: none;
+            }
+        &-x{
+            display: none;
+        }
+    }
+   
+    
+}

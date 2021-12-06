@@ -1,0 +1,38 @@
+.mclr{
+    color: var(--gray-dark);
+}
+.capClr{
+    color: var(--gray-medium-dark);
+}
+.fw8{
+    font-weight: 800;
+}
+
+.lst-ol{
+    margin: 15px;
+    li{
+        padding-left: 15px;
+        margin-top: 3px;
+    }
+}
+
+.add-btn-wrap{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    .add-btn-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 20px;
+        bottom: 0;
+        width: 100%;
+        position: fixed;
+        left: 0;
+        padding: 10px;
+        box-sizing: border-box;
+        background-color: var(--gray-very-light);
+    }
+}

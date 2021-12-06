@@ -1,0 +1,58 @@
+.no-ico {
+    padding-left: 10px;
+    height: 39px;
+    color: var(--secondary-color);
+  }
+  .no-ico label {
+    cursor: pointer;
+  }
+  .ico-drowdown {
+    width: 20px;
+    height: 20px;
+    stroke-width: 1.5px;
+    stroke: var(--gray-dark);
+    margin-right: 10px;
+  }
+  .user-dropdown {
+    position: absolute;
+    height: auto;
+    width: 200px;
+    background: var(--bg-color);
+    top: 51px;
+    right: 0;
+    padding: 10px;
+    box-shadow: 0 0 8px var(--gray-light);
+  }
+  .user-drop-card {
+    display: block;
+    padding: 0;
+    width: 100%;
+  }
+  .user-drop-card li {
+    display: flex;
+    align-items: center;
+  }
+  .user-drop-card li a {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .user-drop-card li a:hover {
+    background-color: var(--gray-very-light);
+    border-radius: 0;
+  }
+  .nav-drop-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    background-color: var(--bg-color);
+    z-index: -10;
+    pointer-events: all;
+  }
+  .droplist {
+    padding: 0 10px;
+    color: var(--gray-very-dark);
+  }

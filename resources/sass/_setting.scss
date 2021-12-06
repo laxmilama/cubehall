@@ -1,0 +1,117 @@
+._STn{
+    &_password{
+        margin-bottom: 5px;
+        margin-right: 25px;
+        label{
+            font-weight: 600;
+            font-size: 16px;
+        }
+        &_card{
+            margin-top: 15px;
+            margin-bottom: 15px;
+        }
+        &_input{
+            height:30px;
+            min-width: 300px;
+        }
+    }
+    &_flx{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_box{
+        width: calc(25% - 16px) !important;
+        padding-left: 8px !important;
+        padding-right: 8px !important;
+        min-height: 1px !important;
+        position: relative !important;
+    }
+    &_lft{
+        width:50%;
+    }
+    &_file_input{
+        visibility: hidden;
+    }
+    &_profile{
+        height:100px;
+        width: 100px;
+        &_img{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+    &_lst{
+        border-bottom: solid 1px var(--gray-light);
+        margin-top: 24px;
+        margin-bottom: 24px;
+        &_flx{
+            display: flex;
+            justify-content: space-between;
+        }
+        &_dtl{
+            margin-top: 8px;
+            margin-bottom: 24px;
+            color: var(--gray-dark);
+        }
+        &_inpt{
+            width: 100%;
+            padding:10px;
+            font-size: 16px;
+            color: var(--gray-dark);
+            border-radius: 6px;
+            outline-style: none;
+            border: solid 1px var(--gray-medium);
+            background: var(--gray-bg);
+        }
+
+        &_inpt:focus {
+            border: solid 2px var(--gray-very-dark);
+          }
+        &_save{
+            background: var(--gray-very-dark);
+            color:var(--gray-very-light);
+            padding:10px 22px 10px 22px;
+            border-radius: 4px;
+            font-size: 16px;
+            font-weight: 600;
+            &:disabled{
+                background: var(--gray-medium);
+                color:var(--gray-dark);
+                cursor: not-allowed;
+            }
+        }
+        &_edit{
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--gray-very-dark);
+            &:hover{
+                text-decoration: underline;
+            }
+        }
+        &_edit:disabled{
+            background: none;
+            border: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--gray-medium);
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    ._STn{
+        &_lft{
+            width:100%;
+        }
+        &_password{
+            &_card{
+                margin-top: 15px;
+                margin-bottom: 15px;
+            }
+        }
+
+    }
+}

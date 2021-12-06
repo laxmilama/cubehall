@@ -1,0 +1,94 @@
+.ticket{
+    &-wrap{
+        &-item{
+            border: solid 1px var(--gray-light);
+            padding: 16px;
+            margin: 15px 0;
+        }
+    }
+    &-item-left{
+        width:400px;
+        &-details{
+            margin-left: 15px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    &-thumb{
+        width:150px;
+        height:120px;
+        &-img{
+            height:100%;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+}
+._TCT{
+    &_wrap{
+        display: grid;
+        grid: column;
+        grid-column-gap: 20px;
+        grid-template-columns: auto auto auto;
+        grid-row-gap: 20px;
+    }
+    &_card{
+        width:100%;
+        flex-shrink: 0;
+        box-sizing: border-box;
+        border:solid 1px var(--gray-light);
+        text-align: center;
+        position: relative;
+        margin-bottom: 15px;
+        padding:15px;
+    }
+    &_container{
+        position: relative;
+        width: 100%;
+        padding-top: 50%;
+    }
+    &_img{
+        height: 100%;
+        width:100%;
+        object-fit: cover;
+        &_holder{
+            position: absolute;
+            height: 100%;
+            width:100%;
+            top: 0;
+        }
+    }
+    
+}
+
+@media only screen and (max-width: 600px) {
+    ._TCT{
+        &_wrap{
+            display: grid;
+            grid: column;
+            grid-column-gap: 20px;
+            grid-template-columns: auto;
+            grid-row-gap: 20px;;
+        }
+        &_card{
+            width:100%;
+           
+        }
+    }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 600px) {
+    ._TCT{
+        &_wrap{
+            display: grid;
+            grid: column;
+            grid-column-gap: 20px;
+            grid-template-columns: auto auto;
+            grid-row-gap: 20px;;
+        }
+        &_card{
+            width:100%;
+        }
+    }
+}

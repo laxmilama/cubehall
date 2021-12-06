@@ -1,0 +1,44 @@
+.lb-hd{
+    justify-content: space-between;
+}
+.pt30{
+    padding-top: 30px;
+}
+._history{
+    &_wrapper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    &_card{
+        width: calc(20% - 20px);
+        flex: 0 0 auto;
+        display: flex;
+        margin: 0 10px 10px 10px;
+    }
+    &_holder{
+        width: 100%;
+    }
+    &_name{
+        margin: 8px 0;
+    }
+    &_head{
+        margin: 15px 0;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    ._history{
+        &_card{
+            width: calc(33.33% - 12px);
+            flex: 0 0 auto;
+            display: flex;
+            margin: 6px;
+        }
+        &_name{
+            margin: 8px 0;
+            font-size: 12px;
+        }
+    }
+
+}

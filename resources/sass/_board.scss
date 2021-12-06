@@ -1,0 +1,167 @@
+._BD{
+    width: 100%;
+    height: max-content;
+    text-decoration: none;
+    color: var(--gray-very-dark);
+    &_title{
+        align-items: center;
+        font-size: 16px;
+        padding:5px;
+        a{
+            text-decoration: none;
+        }        
+    }
+    &_ico{
+        height: 20px;
+        width: 20px;
+        margin-right: 10px;
+    }
+    &_multi{
+        content: "";
+        height: 40px;
+        display: block;
+        border-radius: 16px;
+        border: 1px solid var(--gray-medium-dark);
+        background: var(--gray-light);
+    }
+    &_multi::after, &_multi::before{
+        position: absolute;
+        content: "";
+        height: 40px;
+        display: block;
+        border-radius: 16px;
+        border: 1px solid var(--gray-medium-dark);
+    }
+    &_multi::before{
+        left: 3px;
+        right: 3px;
+        bottom: -5px;
+        z-index: -1;
+    }
+    &_multi::after {
+        left: 6px;
+        right: 6px;
+        bottom: -9px;
+        z-index: -2;
+    }
+
+    &_coll{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    &_profile{
+        height: 96px;
+        width: 96px;
+        img{
+            height: 100%;
+            width:100%;
+            object-fit: cover;
+        }
+    }
+    &_d_title{
+        margin-top: 0;
+        margin-bottom: 5px;
+        font-size: 36px;
+        font-weight: 800;
+    }
+    &_d_handle{        
+        font-size: 24px;
+        background: linear-gradient(110.78deg, rgb(118, 230, 80) -1.13%, rgb(249, 214, 73) 15.22%, rgb(240, 142, 53) 32.09%, rgb(236, 81, 87) 48.96%, rgb(255, 24, 189) 67.94%, rgb(26, 75, 255) 85.34%, rgb(98, 216, 249) 99.57%);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+    }
+
+    &_d_owner{
+        margin:0;
+        font-size:24px;
+        font-weight: 400;
+    }
+
+    &_wrap{
+        display: grid;
+        grid-column-gap: 30px;
+        grid-template-columns: auto auto auto auto;
+        grid-row-gap: 30px;
+    }
+    &_item{
+        width: 100%;
+        flex: 0 0 auto;
+        display: flex;
+        position: relative;
+        padding-top: 100%;
+        overflow: hidden;
+        &_card{
+            position: absolute;
+            top: 0;
+            height: 100%;
+            width: 100%;
+        }
+        &_img_holder{
+            height: 100%;
+            width: 100%;
+            
+        }
+        &_img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+.Board{
+    &_grid{
+        display: grid;
+        grid-column-gap: 2%;
+        grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    }
+    &_card{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+    .Board{
+        &_grid{
+            display: grid;
+            grid-column-gap: 2%;
+            grid-template-columns: 32% 32% 32%;
+        }
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+    ._BD{
+        &_title{
+            align-items: center;
+            font-size: 12px;
+            padding:5px;        
+        }
+        &_ico{
+            height: 15px;
+            width: 15px;
+            margin-right: 5px;
+        }
+        &_wrap{
+            display: grid;
+            grid-column-gap: 15px;
+            grid-template-columns: auto auto;
+            grid-row-gap: 15px;
+        }
+    }
+
+    .Board{
+        &_grid{
+            display: grid;
+            grid-column-gap: 2%;
+            grid-template-columns: 49% 49%;
+        }
+        &_card{
+            width: 100%;
+        }
+    }
+
+}

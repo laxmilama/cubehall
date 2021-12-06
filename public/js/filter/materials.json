@@ -1,0 +1,20 @@
+[
+    {"name": "Fabric", "code": "FB"},
+    {"name": "Steel ", "code": "ST"},
+    {"name": "Solid Wood", "code": "SW"},
+    {"name": "Rattan", "code": "RT"},
+    {"name": "Wood", "code": "WD"},
+    {"name": "Plastic", "code": "PL"},
+    {"name": "Coated Fabric", "code": "CF"},
+    {"name": "Metal", "code": "MT"},
+    {"name": "Bamboo", "code": "BM"},
+    {"name": "Gold", "code": "GD"},
+    {"name": "Silver", "code": "SV"},
+    {"name": "Wool", "code": "WL"},
+    {"name": "Denim", "code": "DM"},
+    {"name": "Leather", "code": "LT"},
+    {"name": "Polester", "code": "PT"},
+    {"name": "Silk", "code": "SK"},
+    {"name": "Paper", "code": "PR"}     
+   
+]

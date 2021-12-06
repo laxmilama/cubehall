@@ -1,0 +1,47 @@
+.footer{
+    background-color: var(--gray-very-light);
+    color:var(--gray-dark);
+    &-wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+    &-padding{
+        padding-top:75px;
+        padding-bottom: 65px;
+    }
+    &-copy-wrapper{
+        padding-bottom: 30px;
+    }
+    &-card{
+        h5{
+            margin-top:0px;
+        }
+        ul{
+            margin: 0;
+            padding: 0px;
+            li{
+                list-style: none;
+                margin-top: 16px;
+                a{
+                    text-decoration: none;
+                    color: var(--gray-dark);
+                }
+                a:hover{
+                    text-decoration: underline;
+
+                }
+            }
+        }
+        &-logo{
+            img{
+                width: 100px;
+            }
+        }
+        &-box{
+            max-width: 300px;
+        }
+        &-info{
+            margin: 20px 0;
+        }
+    }
+}

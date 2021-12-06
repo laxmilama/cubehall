@@ -1,0 +1,102 @@
+.review{
+    &_container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    &_grid{
+        width: 45%;
+    }
+    &_wrapper{
+        display: block;
+        margin-bottom: 34px !important;   
+        margin-top: 14px !important; 
+    }
+    &_wt{
+        margin-bottom: 16px !important;
+        -webkit-box-align: center !important;
+        display: flex !important;
+        align-items: center !important;
+        &_dt{
+            margin-left: 12px;
+        }
+        &_n{
+            color: var(--gray-very-dark);
+            font-weight: 600 !important;
+            font-size: 16px !important;
+            line-height: 20px !important;
+        }
+        &_t{
+            color: var(--gray-medium-dark);
+            font-weight: 400 !important;
+            font-size: 14px !important;
+            line-height: 20px !important;
+        }
+    }
+    &_pp{
+        height:60px;
+        width:60px;
+        &_img{
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            overflow: hidden;
+        }
+    }
+    &_sum{
+        margin-bottom: 25px;
+    }
+    &-summery{
+        &-header{
+            display: flex;
+            align-items: center;
+            svg{
+                fill: var(--primary-color);
+            }
+            font-weight: 800;
+
+        }
+        &-table{
+            display: flex;
+            justify-content: space-between;
+        }
+        &-rating{
+            width: 100%;
+
+            &-bar{
+                background-color: var(--gray-light);
+                width: 50%;
+                height: 10px;
+                &-wrapper{
+                    display: flex;
+                    align-items: center;
+                    margin-bottom: 20px; 
+                }
+                &-progress{
+                    height: 10px;
+                    background-color: var(--gray-medium-dark);
+                }
+                
+                
+            }
+        }
+    }
+}
+@media only screen and (max-width: 920px) {
+    ._mbl_flx{
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .review{
+        &_grid{
+            width: 100%;
+        }
+    }
+    ._mbl_flx{
+        flex-direction: column;
+    }
+}
+

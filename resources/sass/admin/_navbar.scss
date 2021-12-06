@@ -1,0 +1,108 @@
+.ad{
+    &_nav{
+    height: 60px;
+    width: 100%;
+    background-color: var(--bg-color);
+    box-shadow: var(--gray-light) 1px 1px 6px;
+    padding: 10px;
+    box-sizing: border-box;    
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    nav{
+        display: flex;
+        height: 100%;
+    }
+
+    }
+    &_studio{
+        height: 40px;
+        display: flex;
+        align-items: center;
+        &_logo{
+            height: 32px;
+            margin-left: 10px;
+            margin-right: 15px;
+            fill:var(--primary-color);
+        }
+    }
+    &_search{
+        width: 50%;
+        height: 35px;
+        display: flex;
+        position: relative;
+        input{
+            width: 100%;
+            border-radius: 50px;
+            outline-style: none;
+            padding-left: 20px;
+            border: 1px solid var(--gray-medium);
+        }
+    }
+    &_scope{
+        display: flex;
+        &_avatar{
+            width: 40px;
+            height: 40px;
+            background-color: var(--gray-medium);
+            padding: 2.5px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            margin-left: 15px;
+        }
+    }
+    &_avatar{
+        cursor: pointer;
+        height: 100%;
+        width: 100%;
+        border-radius: 50%;
+        overflow: hidden;
+        img{
+            height: 33px;
+            width: 33px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+    &_pos{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.create-btn{
+    height: 40px;
+    font-weight: 600!important;
+    display: flex;
+    justify-content: center;
+    background: var(--gradient);
+    color: white!important;
+    margin-left: 15px;
+    border:none!important;
+    span{
+        padding-left: 10px;
+    }
+}
+.hamburger{
+    background: transparent;
+    border: none;
+    padding:5px;
+}
+
+@media only screen and (max-width: 600px) {
+    .create-btn{
+        padding: 0!important;
+        margin:0;
+        height: 40px;
+        width: 40px!important;
+        svg{
+            stroke-width: 3px;
+        }
+    }
+  }
+  @media only screen and (max-width: 920px) and (min-width: 600px) {
+    
+  }

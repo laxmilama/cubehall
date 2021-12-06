@@ -1,0 +1,89 @@
+.sm-container{
+    max-width: 1080px;
+  margin: 0 auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.statLbl{
+  font-size: 14px;
+}
+label{
+  cursor: pointer;
+}
+.DB-stat{
+  width: 16.6%;
+}
+.flx{
+  display: flex;
+  flex-wrap: wrap;
+}
+.stat-flx{
+  display: flex;
+}
+.stat-chart{
+  width: calc(58.33% - 20px);
+}
+.input{
+  &-text{
+    height: 60px !important;
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    border-top-right-radius: 0px !important;
+    border-bottom-right-radius: 0px !important;
+    min-width: 310px;
+  }
+  &-field{
+    font-size: 18px;
+  }
+  &-counter{
+    align-items: center;
+    display: flex;
+    transform: translateX(-30px);
+  }
+  &-noninteractive{
+    height:40px;
+    border: none;
+    font-size: 16px;
+    color:var(--gray-very-dark);
+    background: transparent;
+  }
+  &-button{
+    &-symbol{
+      border-radius: 50%;
+      height: 35px;
+      width: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: solid 2px var(--gray-medium-dark);
+    }
+  }
+  &-num-field{
+    padding: 0 16px;
+    align-items: center;
+    display: flex;
+    font-weight: 600;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .statLbl{
+    font-size: 12px;
+  }
+  .DB-stat{
+    width: 33.33%;
+  }
+  .stat-flx{
+    display: flex;
+    flex-direction: column;
+  }
+  .stat-chart{
+    width: calc(100% - 20px);
+  }
+}
+
+@media only screen and (max-width: 920px) and (min-width: 600px) {
+  .DB-stat{
+    width: 33.33%;
+  }
+}

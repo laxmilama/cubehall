@@ -1,0 +1,136 @@
+._PUP_Grid_ {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    border-top: 1px solid var(--gray-medium);
+    border-right: 1px solid var(--gray-medium);
+}
+
+._OD_Grid_ span {
+    padding: 8px 4px;
+    border-left: 1px solid var(--gray-medium);
+    border-bottom: 1px solid var(--gray-medium);
+}
+._lang_ck{
+	font-size: 18px;
+    line-height: 24px;
+    font-weight: 400!important;
+    padding: 10px;
+}
+
+._inp_c{
+    cursor: pointer;
+}
+._inp_admn{
+    max-width: 100%;
+    height: 47px;
+    padding: 10px 25px;
+    border-radius: 4px;
+    font-size: 16px;
+    border: solid 2px var(--gray-medium);
+    box-sizing: border-box;
+    margin: 10px 0;
+}
+.upload-wrapper{
+    position: relative;
+    text-align: center !important;
+    border-color: var(--gray-light) !important;
+    cursor: pointer !important;
+    border-style: dashed !important;
+    border-radius: 6px!important;
+}
+.drag-text {
+    text-transform: uppercase;
+    color: var(--gray-dark);
+    padding: 60px 0;
+
+  }
+.img-preview{
+    width: 100%;
+    border-radius: 8px;
+    img{
+        width: 100%;
+    }
+}
+.thumb-upload{
+    max-width: 400px;
+    margin: 0 auto;
+}
+.fieldset{
+    margin-top: 25px;
+}
+
+.inp_sml{
+    width:130px;
+    margin-top: 0!important;
+    padding-left: 35px;
+}
+.ship_rmv_btn{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    background-color: var(--gray-very-light);
+    border: none;
+    margin-top:10px;
+
+}
+.ship_addr_card{
+    margin: 24px 0;
+}
+.ship_price_box{
+    margin-right: 20px;
+}
+.ship_price_symbol{
+    position: absolute;
+    margin-left: 14px;
+    margin-bottom: 10px;
+}
+.flex_align_center{
+    display: flex;
+    align-items: center;
+}
+
+.ship_col_new_un{
+    border: none;
+    background: none;
+    padding-left: 0;
+    &:hover{
+        text-decoration: underline;
+    }
+}
+._up_td_inp{
+    width: max-content;
+}
+._inp_padMax{
+    padding-left: 45px!important;
+}
+
+._v_copy{
+    background: transparent;
+    border:none;
+    margin-left: 10px;
+}
+._v_head{
+    display: flex;
+    align-items: center;
+}
+._up_vars{
+    display: flex;
+    flex-wrap: wrap;
+}
+.upload-thumbnail-input{
+    left:0;
+}
+.up_dt_img0{
+    padding:25px;
+}
+@media only screen and (max-width: 600px) {
+    .fieldset{
+        margin-top: 0;
+        margin-bottom: 60px;
+        border: none!important;
+    }
+    .mbl_inp_100{
+        width: 100%;
+    }
+}
