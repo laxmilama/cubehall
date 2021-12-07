@@ -108,7 +108,12 @@ class StoryController extends Controller
             'file' => 'required|image|mimes:jpeg,png,jpg|max:20048',
         ]);
 
+        
+
         $filename = $this->ImageController->store($request->file->path(), false, 'story');       
+        if ($filename == 405) {
+            return response('invalid aspected ratio', 405);
+        }
 
         return response()->json(['image' => $filename]);
     }

@@ -25,7 +25,6 @@ class MessageController extends Controller
     //test chat
     public function testfollow()
     {
-
         return view('chat');
     }
 
@@ -42,7 +41,6 @@ class MessageController extends Controller
     {
         return $this->fetchMessagesQuery($user_id)
         ->latest()
-        ->select('text')
         ->first();
     }
 
@@ -104,8 +102,6 @@ class MessageController extends Controller
                 "current_page" => $users->currentPage()
             ]
         );
-        //}
-        // return response()->json($contacts);
 
     }
 
@@ -122,7 +118,7 @@ class MessageController extends Controller
             $q->where('to', auth()->id());
         })
             ->orderBy('created_at', 'desc')
-            ->paginate(10);
+            ->paginate(20);
         return  response()->json($messages);
     }
 
@@ -145,6 +141,10 @@ class MessageController extends Controller
         ]);
 
         $filename = $this->ImageController->store($request->image->path(), false, 'message');
+
+        if ($filename == 405) {
+            return response('invalid aspected ratio', 405);
+        }
 
         return response()->json(['image' => $filename]);
     }

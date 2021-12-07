@@ -1,11 +1,11 @@
-@extends('layouts.shop')
+@extends('layouts.chat')
 
 @section('title')
-    Explore
+    Messages
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container clearPadMobile">
         <div data-init="chat">
             <chat-app :user="{{ auth()->user() }}"></chat-app>
         </div>
