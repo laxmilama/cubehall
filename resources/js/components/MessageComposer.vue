@@ -1,7 +1,7 @@
 <template>
   <div class="composer msg_composer">
     <div class="msg_composer_box">
-      <div>
+      <div class="msg_btn_img">
         <label for="_image" class="msg_composer_img">
           <svg
             width="30px"
@@ -54,7 +54,7 @@
         placeholder="Message..."
         class="msg_composer_inp"
       ></textarea>
-      <button @click="send">Send</button>
+      <button :disabled="message <= 0" @click="send">Send</button>
     </div>
   </div>
 </template>

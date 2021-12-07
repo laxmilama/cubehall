@@ -19,6 +19,7 @@ $line-height-base: 1.6;
     --gradient:linear-gradient(45deg,#f64a6d,#ca399a);
     --gradient-new:linear-gradient(90deg,#c42749 0%,rgba(241,47,63,1) 50%,rgb(115, 24, 220) 100%);
     --brand:rgb(0, 0, 0);
+    --message-light:rgb(248, 221, 221);
 
 
     // new colors
@@ -55,7 +56,7 @@ $line-height-base: 1.6;
     --gray-very-dark: #f3f3f3;
     --brand:rgb(255, 255, 255);
     --gradient-new:linear-gradient(90deg,#c42749 0%,rgba(241,47,63,1) 50%,rgb(115, 24, 220) 100%);
-
+    --message-light:#251c1c;
     --lg-crum-right:linear-gradient(
         to left,
         rgb(37,37,37) 56.77%,

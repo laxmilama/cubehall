@@ -8,7 +8,10 @@
         v-for="contact in sortedContacts"
         :key="contact.id"
         @click="selectContact(contact)"
-        :class="{ c_selected: contact == selected }"
+        :class="{
+          c_selected: contact == selected,
+          c_unread: contact.id == contact.recent.from && contact.recent.read == 0,
+        }"
         class="msg_user round_c_s"
       >
         <div class="msg_user_profile round_full">
@@ -28,6 +31,7 @@
   </div>
 </template>
 <script>
+import axios from "axios";
 export default {
   props: {
     contacts: {
@@ -41,6 +45,7 @@ export default {
     };
   },
   methods: {
+    checkread() {},
     selectContact(contact) {
       this.selected = contact;
 

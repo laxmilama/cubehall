@@ -18,6 +18,14 @@
             }
         }
     }
+    &_download{
+        
+        a{
+            display: flex;
+            align-items: center;
+            text-decoration: underline;
+        }
+    }
     &_card{
         &_sent{
             display: flex;
@@ -91,13 +99,20 @@
 .c_selected{
     background: var(--gray-light);
 }
+.c_unread{
+    background: var(--message-light);
+}
 .msg_back_btn{
     display: none;
 }
 .contact_msg_short{
     color:var(--gray-medium-dark);
 }
-
+.msg_btn_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 @media only screen and (max-width: 600px) {
     .fullcontact{
         width: 100%;
@@ -111,6 +126,9 @@
         position: absolute;
         background: var(--gray-very-light);
         left: 0;
+        top:0;
+        height:100vh!important;
+        z-index: 1000;
     }
     .msg_back_btn{
         display: flex;
